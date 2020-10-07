@@ -4,21 +4,55 @@ clc
 
 fprintf('Ingrese la matriz A \n\n');
 
-filas = input('Ingrese el número de filas de la matriz \n'); %reglones o filas
-columnas = input('Ingrese el número de columnas de la matriz \n'); %columnas
+filasA = input('Ingrese el número de filas de la matriz \n'); %reglones o filas
+columnasB = input('Ingrese el número de columnas de la matriz \n'); %columnas
 
 %vector vacio que contendrà los valores de la matriz
-x = [];
+A = [];
 
-mena = 'Entrada del campo %d,%d: ';
+capturaDatos = 'Entrada del campo %d,%d: ';
 
 %llenado matriz n
-for i = 1 : columnas
-    for j = 1 : filas %llenando matriz m
-        fprintf(mena,i,j)
-        x(i,j) = input('');
+for i = 1 : filasA
+    for j = 1 : columnasB %llenando matriz m
+        fprintf(capturaDatos,i,j)
+        A(i,j) = input('');
     end
 end
 
 disp('su matriz es: ');
-x
+A
+auxA=[A];
+%A=aux[];
+
+%%ingresando la matriz B
+
+fprintf('Ingrese la matriz B \n\n');
+
+filasB = input('Ingrese el número de filas de la matriz \n'); %reglones o filas
+columnasB = input('Ingrese el número de columnas de la matriz \n'); %columnas
+
+%vector vacio que contendrà los valores de la matriz
+B = [];
+
+capturaDatosB = 'Entrada del campo %d,%d: ';
+
+%llenado matriz n
+for i = 1 : filasB
+    for j = 1 : columnasB %llenando matriz m
+        fprintf(capturaDatosB,i,j)
+        B(i,j) = input('');
+    end
+end
+
+disp('su matriz es: ');
+B
+auxB = [B];
+
+%convirtiendo A en B
+A=auxB
+
+%convirtiendo B en A
+B=auxA
+
+

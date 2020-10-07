@@ -1,9 +1,7 @@
 clear all
 clc
 
-
 fprintf('Ingrese la matriz A \n\n');
-
 filasA = input('Ingrese el número de filas de la matriz \n'); %reglones o filas
 columnasB = input('Ingrese el número de columnas de la matriz \n'); %columnas
 
@@ -20,15 +18,14 @@ for i = 1 : filasA
     end
 end
 
-disp('su matriz es: ');
+disp('su matriz A es:');
 A
 auxA=[A];
-%A=aux[];
+
 
 %%ingresando la matriz B
 
 fprintf('Ingrese la matriz B \n\n');
-
 filasB = input('Ingrese el número de filas de la matriz \n'); %reglones o filas
 columnasB = input('Ingrese el número de columnas de la matriz \n'); %columnas
 
@@ -45,13 +42,15 @@ for i = 1 : filasB
     end
 end
 
-disp('su matriz es: ');
+disp('su matriz B es:');
 B
 auxB = [B];
 
 %convirtiendo A en B
+disp('La nueva matriz A con los valores de B es:');
 A=auxB
 
+disp('La nueva matriz B con los valores de A es:');
 %convirtiendo B en A
 B=auxA
 

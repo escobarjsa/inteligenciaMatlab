@@ -3,9 +3,9 @@ clear all;
 clc;
 
 %Variables de animacion
-frames = 100;
-pausa = 0.0001;
-pausaInicial = 0.001;
+%frames = 100;
+%pausa = 0.0001;
+%pausaInicial = 0.001;
 
 %Variables del tamano del plano carteciano
 Xmin = -3; %X minima

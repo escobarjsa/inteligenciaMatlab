@@ -16,7 +16,7 @@ Ymax = 8; %Y maxima
 %Valor de Rotacion
 theta = -3600;
 
-%Vertices
+%Vertices, corresponden a los puntos tomados del triangulo
 a=[0,0];
 b=[2,0];
 c=[1,2];
@@ -28,7 +28,7 @@ y = [a(2) b(2) c(2) a(2)];
 %Dibujar el triangulo original
 %trianguloOriginal = line(x,y); %Dibujar triangulo
 %trianguloOriginal.Color = 'blue'; %Colot
-%trianguloOriginal.LineStyle = ':'; %Tipo de linea
+%trianguloOriginal.LineStyle = '-'; %Tipo de linea
 %trianguloOriginal.LineWidth = 3; %Grosor
 
 %Formato al plano
